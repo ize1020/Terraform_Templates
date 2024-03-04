@@ -14,8 +14,8 @@ resource "aws_db_instance" "default" {
   storage_type           = "gp2"
   engine                 = "postgres"
   engine_version         = "15.5"
-  username               = "Itzhak"
-  password               = "Aa123456"
+  username               = "yourmastername"
+  password               = "useyourown"
   publicly_accessible    = false
   vpc_security_group_ids = [aws_security_group.postgresql_secgroup.id]
   db_subnet_group_name   = "${aws_db_subnet_group.subnet_group.name}"
